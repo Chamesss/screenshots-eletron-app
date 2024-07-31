@@ -72,14 +72,14 @@ cd screenshots-electron-app
     
     ```bash
     cd server
-    npm start
+    npm run dev
     ```
     
     client:
     
     ```bash
     cd client
-    npm start
+    npm run dev
     ```
     
 
