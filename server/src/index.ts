@@ -1,7 +1,7 @@
 import bodyParser from 'body-parser'
 import cors from 'cors'
 import dotenv from 'dotenv'
-import express, { Request, Response } from 'express'
+import express from 'express'
 import helmet from 'helmet'
 import mongoose from 'mongoose'
 import screenshotsRoutes from './routes/screenshots-route'
@@ -10,6 +10,7 @@ const app = express()
 
 dotenv.config()
 
+app.use(express.json());
 app.use(bodyParser.json({ limit: '10mb' }))
 app.use(bodyParser.urlencoded({ limit: '10mb', extended: true }))
 app.use(helmet())
@@ -27,6 +28,8 @@ mongoose
 app.use('/users', userRoutes)
 app.use('/screenshots', screenshotsRoutes)
 
-app.listen(() => {
+const port = process.env.PORT || 8000
+
+app.listen(port, () => {
     console.log(`Server is running on port ${process.env.PORT || '8000'}`)
 })

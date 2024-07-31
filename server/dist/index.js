@@ -11,9 +11,9 @@ const helmet_1 = __importDefault(require("helmet"));
 const mongoose_1 = __importDefault(require("mongoose"));
 const screenshots_route_1 = __importDefault(require("./routes/screenshots-route"));
 const user_route_1 = __importDefault(require("./routes/user-route"));
-const port = 8000;
 const app = (0, express_1.default)();
 dotenv_1.default.config();
+app.use(express_1.default.json());
 app.use(body_parser_1.default.json({ limit: '10mb' }));
 app.use(body_parser_1.default.urlencoded({ limit: '10mb', extended: true }));
 app.use((0, helmet_1.default)());
@@ -28,7 +28,8 @@ mongoose_1.default
 });
 app.use('/users', user_route_1.default);
 app.use('/screenshots', screenshots_route_1.default);
+const port = process.env.PORT || 8000;
 app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
+    console.log(`Server is running on port ${process.env.PORT || '8000'}`);
 });
 //# sourceMappingURL=index.js.map
