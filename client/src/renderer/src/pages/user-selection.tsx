@@ -136,7 +136,7 @@ export default function UserSelection() {
       <div className="w-full bg-background px-6 py-10 rounded-lg">
         <div className="flex items-center justify-between mb-6 mt-10">
           <h1 className="text-2xl font-bold">User Management</h1>
-          <Button onClick={() => setIsCreateModalOpen(true)}>Create User</Button>
+          <Button onClick={() => setIsCreateModalOpen(true)}>Create Profile</Button>
         </div>
         <div className="overflow-x-auto">
           <table className="w-full table-auto">
@@ -150,7 +150,7 @@ export default function UserSelection() {
               {users.length === 0 ? (
                 <tr>
                   <td colSpan={2} className="px-6 py-4">
-                    No users found.
+                    No profiles found. Create one to get started.
                   </td>
                 </tr>
               ) : (
