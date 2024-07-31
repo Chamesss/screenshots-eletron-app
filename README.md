@@ -1,13 +1,5 @@
 # Screenshots desktop application
 
-![alt text]([https://github.com/Chamesss/screenshots-eletron-app/blob/master/image.jpg](https://github.com/Chamesss/screenshots-eletron-app/blob/master/screenshots/screen1.PNG?raw=true)
-
-![alt text]([https://github.com/Chamesss/screenshots-eletron-app/blob/master/image.jpg](https://github.com/Chamesss/screenshots-eletron-app/blob/master/screenshots/screen2.PNG?raw=true)
-
-![alt text]([https://github.com/Chamesss/screenshots-eletron-app/blob/master/image.jpg](https://github.com/Chamesss/screenshots-eletron-app/blob/master/screenshots/screen3.PNG?raw=true)
-
-![alt text]([https://github.com/Chamesss/screenshots-eletron-app/blob/master/image.jpg](https://github.com/Chamesss/screenshots-eletron-app/blob/master/screenshots/screen4.PNG?raw=true)
-
 Created by: Chamsedin Azouz
 
 ### **Overview**
@@ -28,7 +20,15 @@ The Screenshot Desktop Application is a desktop application designed to capture 
 
 • React.js
 
-### **Setup**
+### **Screenshots**
+
+![alt text](https://github.com/Chamesss/screenshots-eletron-app/blob/master/screenshots/screen1.PNG?raw=true)
+
+![alt text](https://github.com/Chamesss/screenshots-eletron-app/blob/master/screenshots/screen2.PNG?raw=true)
+
+![alt text](https://github.com/Chamesss/screenshots-eletron-app/blob/master/screenshots/screen3.PNG?raw=true)
+
+![alt text](https://github.com/Chamesss/screenshots-eletron-app/blob/master/screenshots/screen4.PNG?raw=true)
 
 ### **Prerequisites**
 
